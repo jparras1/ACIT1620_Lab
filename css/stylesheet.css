@@ -18,4 +18,5 @@ body{
 .Main-Section {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 350px;
 }
