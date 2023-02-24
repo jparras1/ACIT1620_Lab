@@ -14,3 +14,8 @@ body{
     background-color: yellow;
     text-align: center;
 }
+
+.Main-Section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
