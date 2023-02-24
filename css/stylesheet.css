@@ -1,19 +1,28 @@
-header {
-    background-color: yellow;
-}
-
 .nav-list {
-    /* text-align: center; */
-    list-style-type: none;
+    background-color: yellow;
     display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 
-h1{
-    color: #000080;
+.flex-item {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
 }
 
 .index_h1_header{
     font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    color: #000080;
 }
 
 body{
