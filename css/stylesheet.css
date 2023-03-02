@@ -63,4 +63,13 @@ footer {
     .nav-list li {
         padding: 10px;
     }
+    .course-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 100px;
+        gap: 10px;
+    }
+    .course-year {
+        order: 3;
+    }
 }
