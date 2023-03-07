@@ -90,4 +90,9 @@ footer {
     main > section:last-child {
         border-bottom: none;
     }
+    [title="Database Systems Course Outline"] {
+        align-self: flex-start;
+        /* justify-self: flex-start; */
+        /* border: 10px black solid; */
+    }
 }
