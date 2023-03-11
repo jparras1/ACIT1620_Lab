@@ -15,10 +15,15 @@ const courseList = [
 
 let user_digits;
 let code_found = false;
+let invalid_input = false;
 
 do {
-    user_digits = prompt("Enter a 4-digit number: ");
-} while (isNaN(user_digits) || user_digits.length < 4);
+    if (invalid_input === true) {
+        console.log("Invalid input")
+    };
+    user_digits = prompt("Please enter a valid 4-digit number: ");
+    invalid_input = true;
+} while (isNaN(user_digits) || user_digits.length < 4 || user_digits.length > 4);
 
 for (let course of courseList) {
     if (course["code"].includes(user_digits)) {
@@ -33,7 +38,7 @@ if (code_found === false) {
             name: null
         }
     )
-    console.log("Success!");
+    console.log("New course code added!");
 };
 console.log(courseList);
 
