@@ -48,6 +48,13 @@ main > section:last-child {
     border-bottom: none;
 }
 
+/* links are only clickable when
+    cursor is directly on top of text */
+.course-item > a {
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
 /* --------------------------------------Footer---------------------------------------- */
 footer {
     background-color: yellow;
@@ -89,10 +96,5 @@ footer {
     }
     main > section:last-child {
         border-bottom: none;
-    }
-    [title="Database Systems Course Outline"] {
-        align-self: flex-start;
-        /* justify-self: flex-start; */
-        /* border: 10px black solid; */
     }
 }
