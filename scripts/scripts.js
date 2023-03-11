@@ -12,3 +12,11 @@ const courseList = [
         name: "Introduction to Systems Administration"
     }
 ];
+
+let user_digits;
+
+do {
+    user_digits = prompt("Enter a 4-digit number: ");
+} while (isNaN(user_digits) || user_digits.length < 4);
+
+console.log("hello");
