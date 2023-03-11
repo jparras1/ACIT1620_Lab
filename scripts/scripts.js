@@ -14,9 +14,26 @@ const courseList = [
 ];
 
 let user_digits;
+let code_found = false;
 
 do {
     user_digits = prompt("Enter a 4-digit number: ");
 } while (isNaN(user_digits) || user_digits.length < 4);
 
-console.log("hello");
+for (let course of courseList) {
+    if (course["code"].includes(user_digits)) {
+        console.log(`Yes I am taking the course: ${course["code"]} - ${course["name"]}`);
+        code_found = true;
+    };
+};
+if (code_found === false) {
+    courseList.push (
+        {
+            code: user_digits,
+            name: null
+        }
+    )
+    console.log("Success!");
+};
+console.log(courseList);
+
