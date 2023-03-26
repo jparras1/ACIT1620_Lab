@@ -44,7 +44,7 @@ main[class="course-main-section"] > section {
     margin: 10px 0px;
 }
 
-main > section:last-child {
+main[class="course-main-section"] > section:last-child {
     border-bottom: none;
 }
 
@@ -93,8 +93,5 @@ footer {
     }
     main[class="course-main-section"] > section {
         border-bottom: 3px gray solid;
-    }
-    main > section:last-child {
-        border-bottom: none;
     }
 }
